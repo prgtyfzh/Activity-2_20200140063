@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Program Kasir Toko Sayur</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <table border = "1">
+            <tr>
+                <th>Nama Sayur</th>
+                <th>Harga</th>
+                <th>Jumlah</th>
+                <th>Subtotal</th>
+            </tr>
+            
+            <tr>
+                <td th:text="${sayur}"></td>
+                <td th:text="${harga}"></td>
+                <td th:text="${jumlah}"></td>
+                <td th:text="${subtotal}"></td>
+            </tr>                        
+            
+            <tr>
+                <th rowspan="2" >Diskon</th>
+            </tr>
+            
+            <tr>
+                <th><b colspan="11" th:text="${diskon}"></b>%</th>
+            </tr>
+            
+            <tr>
+                <th rowspan="2" >Potongan Harga</th>
+            </tr>
+            
+            <tr>
+                <th colspan="11" th:text="${hargadiskon}"></th>
+            </tr>
+            
+            <tr>
+                <th rowspan="2" >Total</th>
+            </tr>
+            
+            <tr>
+                <th colspan="11" th:text="${total}"></th>
+            </tr>
+            
+            <tr>
+                <th rowspan="2" >Tunai</th>
+            </tr>
+            
+            <tr>
+                <th colspan="11" th:text="${tunai}"></th>
+            </tr>
+            
+            <tr>
+                <th colspan="11" th:text="${pesan}"></th>
+            </tr>
+            
+        </table>
+        <hr>
+    </body>
+</html>
